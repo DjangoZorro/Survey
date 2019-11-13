@@ -4,9 +4,114 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
+    <style>
+        .nav-item a{ 
+            color: white!important;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #3a0f49 !important;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mx-auto" style="width: 100%; justify-content: space-around; display: flex;">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Over Ons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Partners</a>
+            </li>
+            <li class="nav-item">
+                <img class="img-fluid" src="https://cdn.discordapp.com/attachments/462767565203308545/644113102060912660/nav-circle.png" width="5%" style="position:absolute;">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+      </nav>
+      <br>
+    <body>    
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
+    <footer class="container-fluid bg-grey py-5" style="background-color:#3a0f49!important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <div class="logo-part">
+                                    <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer" >
+                                    <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                                    <p>Use this tool as test data for an automated system or find your next pen</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-4">
+                                <h6> About Company</h6>
+                                <p>But horizontal lines can only be a full pixel high.</p>
+                                <a href="#" class="btn-footer"> More Info </a><br>
+                                <a href="#" class="btn-footer"> Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 px-4">
+                                <h6> Help us</h6>
+                                <div class="row ">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li> <a href="#"> Home</a> </li>
+                                            <li> <a href="#"> About</a> </li>
+                                            <li> <a href="#"> Service</a> </li>
+                                            <li> <a href="#"> Team</a> </li>
+                                            <li> <a href="#"> Help</a> </li>
+                                            <li> <a href="#"> Contact</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 px-4">
+                                        <ul>
+                                            <li> <a href="#"> Cab Faciliy</a> </li>
+                                            <li> <a href="#"> Fax</a> </li>
+                                            <li> <a href="#"> Terms</a> </li>
+                                            <li> <a href="#"> Policy</a> </li>
+                                            <li> <a href="#"> Refunds</a> </li>
+                                            <li> <a href="#"> Paypal</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <h6> Newsletter</h6>
+                                <div class="social">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </div>
+                                <form class="form-footer my-3">
+                                    <input type="text"  placeholder="search here...." name="search">
+                                    <input type="button" value="Go" >
+                                </form>
+                                <p>That's technology limitation of LCD monitors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
 </html>
