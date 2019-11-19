@@ -50,21 +50,22 @@ class SurveyController extends AbstractController
                     'label' => $question->getDescription()
                 ));
             }
-            elseif ($question->getType()->getName() == "choice") {
+            elseif ($question->getType()->getName() == "select") {
                 $formbuilder->add('answer' . $i, ChoiceType::class, array(
                     'choices' => $question->getChoices(),
                     'required' => false,
                     'label' => $question->getDescription(),
                     'expanded' => true,
-                    'multiple' => false
+                    'multiple' => false,
+                    'placeholder' => false
                 ));
             }
-            elseif ($question->getType()->getName() == "select") {
-                $formbuilder->add('answer' . $i, CheckboxType::class, array(
-                    'required' => false,
-                    'label' => $question->getDescription()
-                ));
-            }
+//            elseif ($question->getType()->getName() == "select") {
+//                $formbuilder->add('answer' . $i, CheckboxType::class, array(
+//                    'required' => false,
+//                    'label' => $question->getDescription()
+//                ));
+//            }
         }
         $formbuilder->add('submit', SubmitType::class, array(
             'label' => 'Inleveren'
