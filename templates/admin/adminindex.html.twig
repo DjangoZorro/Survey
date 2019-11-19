@@ -1,0 +1,73 @@
+{% extends 'admin/adminnav.html.twig' %}
+
+{% block title %}Admin index{% endblock %}
+
+{% block body %}
+    <style>
+        .marginToperino {
+            margin-top: 2%;
+        }
+    </style>
+    <div class="marginToperino">
+        <div class="container">
+            <section id="image-overlays">
+                <h2 style="text-align: center; color: black;">Admin Dashboard</h2>
+                <section>
+                    <div class="row mx-1">
+                        <div class="col-md-6 mb-4">
+                            <div class="card card-image" style="background-image: url(https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);">
+                                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                    <div>
+                                        <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Surveys</h5>
+                                        <h3 class="card-title pt-2"><strong>Ga naar surveys</strong></h3>
+                                        <p><br><br><br></p>
+                                        <a href="{{ path('survey_index') }}" class="btn btn-pink"><i class="fas fa-clone left"></i> Surveys</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card card-image" style="background-image: url('https://e3.365dm.com/19/05/768x432/skynews-instagram-mental-health_4669618.jpg?20190515134659');">
+                                <div class="text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4">
+                                    <div>
+                                        <h5 class="orange-text"><i class="fas fa-desktop"></i> Users</h5>
+                                        <h3 class="card-title pt-2"><strong>Ga naar users</strong></h3>
+                                        <p><br><br><br></p>
+                                        <a href="{{ path('user_index') }}" class="btn btn-deep-orange"><i
+                                                    class="fas fa-clone left"></i> Users</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card card-image" style="background-image: url('https://www.incimages.com/uploaded_files/image/970x450/getty_487063216_366284.jpg');">
+                                <div class="text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4">
+                                    <div>
+                                        <h5 class="yellow-text"><i class="fas fa-desktop"></i> Questions</h5>
+                                        <h3 class="card-title pt-2"><strong>Ga naar questions</strong></h3>
+                                        <p><br><br><br></p>
+                                        <a href="{{ path('question_index') }}" class="btn btn-yellow"><i class="fas fa-clone left"></i> Questions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card card-image" style="background-image: url('https://cache.careers360.mobi/media/article_images/2018/11/22/shutterstock_1200692131_1.jpg');">
+                                <div class="text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4">
+                                    <div>
+                                        <h5 class="red-text"><i class="fas fa-desktop"></i> Answers</h5>
+                                        <h3 class="card-title pt-2"><strong>Ga naar answers</strong></h3>
+                                        <p><br><br><br></p>
+                                        <a href="{{ path('answer_index') }}" class="btn btn-red"><i class="fas fa-clone left"></i> Answers</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
