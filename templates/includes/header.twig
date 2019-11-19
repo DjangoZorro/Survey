@@ -1,0 +1,23 @@
+{% block header %}
+    <div class="home-header" style="min-height: 80vh;">
+        <div class="header-tekst" style="color:white;margin: 18% 0 0 13%;width: 80%;display:flex;">
+            <div class="header-title" style="padding-right: 170px;">
+                <h1 style="font-size: 4rem;letter-spacing: 7px;font-weight: 700;">Dutch Innovation Factory</h1>
+                <div class="header-tekst" style="padding-left: 30px;padding-top: 30px;">
+                    <span style="font-size: 1.9rem;">
+                        Integer est dolor, tempor vitae congue dignissim, euismod sit amet magna. Vivamus porttitor urna ornare tortor commodo, nec congue ante iaculis. Pellentesque id.
+                    </span>
+                </div>
+                <div class="header-button">
+                    <a class="btn" style="width: 350px;background-color: #D9C900;border-radius: 30px;font-size: 2.2rem;color: black;font-weight: 600;margin-top: 50px;">Vragenlijst</a>
+                </div>
+            </div>
+            <div class="header-video">
+                <div class="video-wrapper">
+                    <iframe class="embed-responsive-item" style="border-radius: 20px !important;border:20px solid #000;" width="560" height="315" src="https://www.youtube.com/embed/RDPyhGLet1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <img class="header-image" style="min-width: 100%;pointer-events:none;filter: brightness(75%);position: absolute;z-index: -100;top: 0;" src="{{ asset('uploads/images/header.png') }}">
+    </div>
+{% endblock %}
