@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block body %}
+    <style>
+        .marginError{
+            padding-top: 3%;
+        }
+        #lipositioning{
+            margin-right: 9%;
+            padding-left: 10%;
+            text-align: left;
+        }
+        .niffo{
+            color: white;
+        }
+    </style>
+    <section class="mb-4" style="background-color: #383838">
+        <div class="marginError">
+
+            <div class="row">
+
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <h2 class="h2-responsive font-weight-bold text-center my-4" style="color:white">Contact us + Create project now!</h2>
+                    <div id="lipositioning">
+                        <li>
+                            <h5 style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h5>
+                        </li>
+                        <br>
+                            <img class="niffo" src="https://cdn3.iconfinder.com/data/icons/social-round-corner/512/isntagram__social__media_icon-512.png" alt="Instagram" style="width: 20%">
+                            <img class="niffo" src="https://cdn3.iconfinder.com/data/icons/social-round-corner/512/facebook__social__media_icon-512.png" alt="Facebook" style="width: 20%">
+                            <img class="niffo" src="https://cdn3.iconfinder.com/data/icons/social-round-corner/512/twitter__social__media_icons-512.png" alt="Twitter" style="width: 20%">
+                            <img class="niffo" src="https://cdn3.iconfinder.com/data/icons/social-round-corner/512/vimeo__social__media_icon-512.png" alt="Vimeo" style="width: 20%">
+                    </div>
+                </ul>
+            </div>
+
+
+
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Name</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="surname" name="surname" class="form-control">
+                                <label for="surname" class="">Surname</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="yourphone" name="yourphone" class="form-control">
+                                <label for="yourphone" class="">Your phone</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="email" id="email" name="email" class="form-control">
+                                <label for="email" class="">Email</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+{% endblock %}
