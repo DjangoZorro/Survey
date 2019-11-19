@@ -4,6 +4,9 @@
 
 {% block body %}
     <style>
+        .p {
+            font-family: 'Karla', sans-serif;
+        }
         .marginError{
             padding-top: 3%;
         }
@@ -20,13 +23,13 @@
         <div class="marginError">
 
             <div class="row">
-
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 col-md-offset-2">
                 <ul class="list-unstyled mb-0">
-                    <h2 class="h2-responsive font-weight-bold text-center my-4" style="color:white">Contact us + Create project now!</h2>
+                    <h2 class="h2-responsive" style="color:white; font-family: 'Karla', sans-serif; text-align: center;">Contact us + Create project now!</h2>
                     <div id="lipositioning">
+                        <br>
                         <li>
-                            <h5 style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h5>
+                            <h5 style="color:white; font-family: 'Karla', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h5>
                         </li>
                         <br>
                             <img class="niffo" src="https://cdn3.iconfinder.com/data/icons/social-round-corner/512/isntagram__social__media_icon-512.png" alt="Instagram" style="width: 20%">
@@ -39,7 +42,7 @@
 
 
 
-            <div class="col-md-9 mb-md-0 mb-5">
+            <div class="col-md-8 mb-md-0 mb-5" style="padding-right: 2%; margin-left: 5%;">
                 <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
                     <div class="row">
@@ -89,14 +92,15 @@
 
                 </form>
 
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <div class="text-center text-md-right">
+                    <a class="btn btn-white" onclick="document.getElementById('contact-form').submit();"><p style="color:black">Send Message</p></a>
                 </div>
                 <div class="status"></div>
             </div>
-
         </div>
         </div>
 
+        <br>
+        <br>
     </section>
 {% endblock %}
