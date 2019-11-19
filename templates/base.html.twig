@@ -10,6 +10,19 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Material Design Bootstrap -->
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+
+		<!-- Mobile site -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Font family Karla -->
+		<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+		<!-- CSS -->
+		<link href="{{ asset('uploads/css/header.css') }}" rel="stylesheet">
+		<style>
+			html, body {
+				font-family: 'Karla', sans-serif;
+			}
+		</style>
+		
     </head>
     <body>
         {% block body %}{% endblock %}
