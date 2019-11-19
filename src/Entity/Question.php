@@ -110,7 +110,7 @@ class Question
             $choice->setQuestion($this);
         }
 
-        return $this;
+        return $this->getDescription();
     }
 
     public function removeChoice(Choice $choice): self
@@ -167,5 +167,10 @@ class Question
         $this->type = $type;
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        return (string) $this->getDescription();
     }
 }
