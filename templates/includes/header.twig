@@ -1,6 +1,16 @@
 {% block header %}
-    <div class="home-header">
-        <div class="header-tekst"></div>
-        <img class="header-image" style="min-width: 100%;pointer-events:none;filter: brightness(75%);" src="{{ asset('uploads/images/header.png') }}">
+    <div class="home-header" style="min-height: 85vh;">
+        <div class="header-tekst" style="color:white;margin: 15% 0 0 13%;width: 740px;">
+            <div class="header-title">
+                <h1 style="font-size: 4rem;letter-spacing: 7px;font-weight: 700;">Dutch Innovation Factory</h1>
+            </div>
+            <div class="header-tekst" style="padding-left: 30px;padding-top: 30px;">
+                <span style="font-size: 1.9rem;">
+                        Integer est dolor, tempor vitae congue dignissim, euismod sit amet magna. Vivamus porttitor urna ornare tortor commodo, nec congue ante iaculis. Pellentesque id.
+                </span>
+            </div>
+            <a class="btn" style="width: 350px;background-color: #D9C900;border-radius: 30px;font-size: 2.2rem;color: black;font-weight: 600;margin-top: 50px;">Lees meer</a>
+        </div>
+        <img class="header-image" style="min-width: 100%;pointer-events:none;filter: brightness(75%);position: absolute;z-index: -100;top: 0;" src="{{ asset('uploads/images/header.png') }}">
     </div>
 {% endblock %}
