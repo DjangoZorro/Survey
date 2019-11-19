@@ -1,0 +1,147 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello VragenlijstController!{% endblock %}
+
+{% block body %}
+
+
+    <div class="wrapper">
+
+        <div class="logos_wrapper">
+            <img class="hhs" src="https://cdn.discordapp.com/attachments/620679198570184717/644112184716034090/HHS.svg" alt="">
+            <img class="mbo" src="https://cdn.discordapp.com/attachments/620679198570184717/644113076999946241/Mborijnland.svg" alt="">
+        </div>
+
+        <div class="progress_bar_wrapper">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <!-- Modal: modalPoll -->
+        {#<div class="modal" id="modalPoll">#}
+            <div class="modal-dialog modal-full-height modal-notify modal-info" role="document">
+
+                    <!--Body-->
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit?</p>
+                        </div>
+
+                        {#<div class="form-check mb-4">#}
+                            {#<input class="form-check-input" name="group1" type="radio" id="radio-179" value="option1" checked>#}
+                            {#<label class="form-check-label" for="radio-179">Very good</label>#}
+                        {#</div>#}
+
+                        {#<div class="form-check mb-4">#}
+                            {#<input class="form-check-input" name="group1" type="radio" id="radio-279" value="option2">#}
+                            {#<label class="form-check-label" for="radio-279">Good</label>#}
+                        {#</div>#}
+
+                        {#<div class="form-check mb-4">#}
+                            {#<input class="form-check-input" name="group1" type="radio" id="radio-379" value="option3">#}
+                            {#<label class="form-check-label" for="radio-379">Mediocre</label>#}
+                        {#</div>#}
+                        {#<div class="form-check mb-4">#}
+                            {#<input class="form-check-input" name="group1" type="radio" id="radio-479" value="option4">#}
+                            {#<label class="form-check-label" for="radio-479">Bad</label>#}
+                        {#</div>#}
+                        {#<div class="form-check mb-4">#}
+                            {#<input class="form-check-input" name="group1" type="radio" id="radio-579" value="option5">#}
+                            {#<label class="form-check-label" for="radio-579">Very bad</label>#}
+                        {#</div>#}
+                        {#<!-- Radio -->#}
+
+                        <!--Basic textarea-->
+
+                    </div>
+
+                <div class="md-form">
+                    <textarea type="text" id="form79textarea" class="md-textarea form-control" placeholder="In enim justo" rows="3"></textarea>
+                </div>
+                <!--Footer-->
+
+                </div>
+
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-outline-primary">Back</a>
+                    <a type="button" class="btn btn-outline-primary " data-dismiss="modal">Next</a>
+                </div>
+            </div>
+        </div>
+        <!-- Modal: modalPoll -->
+    </div>
+
+    <style>
+        .wrapper {
+            background-image: url('https://cdn.discordapp.com/attachments/620679198570184717/644109288482275328/Group_1.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .logos_wrapper {
+            display: flex;
+            justify-content: center;
+            height: 130px
+        }
+        .hhs {
+            width: 250px;
+            height: fit-content;
+        }
+        .mbo {
+            width: 250px;
+            height: fit-content;
+        }
+        .progress_bar_wrapper {
+            width: 40%;
+            margin: auto;
+        }
+        .progress-bar {
+            background-color: #eb4b67!important;
+        }
+        .modal-dialog {
+            border-radius: 20px;
+            background-color: white;
+            max-width: 50%;
+            height: 400px;
+            margin-top: 1.75rem;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            margin-left: auto;
+        }
+        .modal-body {
+            padding: 1rem!important;
+            color: #B5BC3E!important;
+            font-weight: bold;
+        }
+        .md-form {
+            margin-top: 0!important;
+            margin-bottom: 0!important;
+        }
+        .md-form textarea.md-textarea {
+            border: solid 1px black;
+            width: 80%;
+            height: 230px;
+            margin: auto;
+        }
+        .md-form textarea.md-textarea::placeholder {
+            color: #B5BC3E!important;
+            padding-left: 2%;
+        }
+        .modal-footer {
+            display: flex;
+            justify-content: space-evenly;
+            border: none!important;;
+            padding: 0!important;
+        }
+        .btn-outline-primary {
+            background-color: #223343!important;
+            color: white!important;
+            text-transform: none!important;
+        }
+        .btn-outline-primary:hover {
+            color: #B5BC3E!important;
+        }
+    </style>
+{% endblock %}
