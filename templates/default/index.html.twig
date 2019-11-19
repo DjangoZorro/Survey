@@ -6,7 +6,9 @@
 <div class="container">
     <div class="md-form">
         <input type="search" id="form-autocomplete-4" class="form-control mdb-autocomplete">
-        <label for="form-autocomplete-4" class="active">What is your favorite US state?</label>
+        {% for questions in question %}
+        <label for="form-autocomplete-4" class="active">{{ question.description }}</label>
+        {% endfor %}
     </div>
     <br>
     <div class="custom-control custom-checkbox">
@@ -14,16 +16,25 @@
         <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
     </div>
     <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-            <label class="custom-control-label" for="defaultUnchecked">Ibnil Kelb</label>
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+        <label class="custom-control-label" for="defaultUnchecked2">Ibnil Kelb</label>
     </div>
     <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-            <label class="custom-control-label" for="defaultUnchecked">Arab Tayzek</label>
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+        <label class="custom-control-label" for="defaultUnchecked3">Arab Tayzek</label>
     </div>
     <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-            <label class="custom-control-label" for="defaultUnchecked">Ya Kelb</label>
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+        <label class="custom-control-label" for="defaultUnchecked4">Ya Kelb</label>
+    </div>
+    <br>
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="defaultChecked1" name="defaultExampleRadios">
+        <label class="custom-control-label" for="defaultChecked1">Ja</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios">
+        <label class="custom-control-label" for="defaultUnchecked1">Nee</label>
     </div>
 </div>
 {% endblock %}
