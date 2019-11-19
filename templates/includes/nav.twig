@@ -1,0 +1,30 @@
+{% block nav %}
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color" style="position: fixed;width: 100%;background-color: transparent !important;box-shadow: none;z-index: 999999;">
+    <a class="navbar-logo" style="padding: 0px 230px;margin-top: 40px;">
+        <img class="navbar-img" src="{{ asset('uploads/images/logo.png') }}" style="width: 260px;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4" style="font-size: 1.8rem;padding: 0px 317px;letter-spacing: 2px;">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" href="#">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" href="#">
+                    Over Ons
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i> Profile 
+                </i>
+                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                    <a class="dropdown-item waves-effect waves-light" href="#">My account</a>
+                    <a class="dropdown-item waves-effect waves-light" href="#">Log out</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endblock %}
