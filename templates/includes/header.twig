@@ -1,23 +1,92 @@
 {% block header %}
-    <div class="home-header" style="min-height: 80vh;">
-        <div class="header-tekst" style="color:white;margin: 18% 0 0 13%;width: 80%;display:flex;">
-            <div class="header-title" style="padding-right: 170px;">
-                <h1 style="font-size: 4rem;letter-spacing: 7px;font-weight: 700;">Dutch Innovation Factory</h1>
-                <div class="header-tekst" style="padding-left: 30px;padding-top: 30px;">
-                    <span style="font-size: 1.9rem;">
-                        Integer est dolor, tempor vitae congue dignissim, euismod sit amet magna. Vivamus porttitor urna ornare tortor commodo, nec congue ante iaculis. Pellentesque id.
-                    </span>
-                </div>
-                <div class="header-button">
-                    <a class="btn" style="width: 350px;background-color: #D9C900;border-radius: 30px;font-size: 2.2rem;color: black;font-weight: 600;margin-top: 50px;">Vragenlijst</a>
-                </div>
-            </div>
-            <div class="header-video">
-                <div class="video-wrapper">
-                    <iframe class="embed-responsive-item" style="border-radius: 20px !important;border:20px solid #000;" width="560" height="315" src="https://www.youtube.com/embed/RDPyhGLet1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
+<style>
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1100px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 700px;
+  }
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+</style>
+
+<!-- Main navigation -->
+<header>
+<!--Navbar-->
+<!-- Navbar -->
+<!-- Full Page Intro -->
+<div class="view" style="background-image: url('https://www.dutchinnovationfactory.nl/wp-content/uploads/2016/02/DSC01219-e1459248687337.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <!-- Mask & flexbox options-->
+  <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+    <!-- Content -->
+    <div class="container">
+      <!--Grid row-->
+      <div class="row pt-lg-5 mt-lg-5">
+        <!--Grid column-->
+        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left wow fadeInLeft"
+          data-wow-delay="0.3s">
+          <h1 class="display-4 font-weight-bold">Dutch Innovation Factory</h1>
+          <hr class="hr-light">
+          <h6 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi
+            fuga
+            nesciunt dolorum nulla magnam veniam sapiente! Commodi sequi non animi ea
+            dolor quisquam iste.</h6>
+          <a class="btn btn-outline-white btn-rounded"><b>Start</b></a>
         </div>
-        <img class="header-image" style="min-width: 100%;pointer-events:none;filter: brightness(75%);position: absolute;z-index: -100;top: 0;" src="{{ asset('uploads/images/header.png') }}">
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-md-6 col-xl-5 mb-4">
+          <!--Form-->
+          <div class="card wow fadeInRight" data-wow-delay="0.3s">
+            <div class="card-body z-depth-2">
+              <!--Header-->
+              <div class="text-center">
+                <h3 class="dark-grey-text">
+                    <strong><h2 style="text-align:center;">In samenwerking met</h2></strong>
+                </h3>
+                <hr>
+              </div>
+              <!--Body-->
+              <div>
+                <img src="https://www.dutchinnovationfactory.nl/wp-content/uploads/2016/02/dif_logo-format2.jpg" class="img-fluid" alt="dutchinnovationfactory" style="margin: auto;">
+                <img src="https://mk0mborijnlandnw1cam.kinstacdn.com/wp-content/uploads/mboRijnland_logo_kleur_blokje.png" class="img-fluid" alt="mborijnland">
+                <img src="https://www.dehaagsehogeschool.nl/docs/default-source/documenten-over-de-haagse/mediakit/hhs_nl_groen_hex.png?sfvrsn=2aafb951_0" class="img-fluid" alt="dehaagsehogeschool">
+              </div>
+            </div>
+          </div>
+          <!--/.Form-->
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
     </div>
+    <!-- Content -->
+  </div>
+  <!-- Mask & flexbox options-->
+</div>
+<!-- Full Page Intro -->
+</header>
+<br>
+<!-- Main navigation -->
 {% endblock %}
